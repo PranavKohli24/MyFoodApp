@@ -1,7 +1,7 @@
 import { images, offers } from "@/constants";
 import { FlatList, Image, Pressable, Text, TouchableOpacity, View } from 'react-native';
 
-import CartButton from "@/components/cartButton";
+import CartButton from "@/components/CartButton";
 import cn from 'clsx';
 import { SafeAreaView } from "react-native-safe-area-context";
 import "../globals.css";
