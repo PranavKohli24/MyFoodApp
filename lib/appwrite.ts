@@ -121,7 +121,9 @@ export const getMenu=async({category,query}:GetMenuParams)=>{
 
 export const getCategories=async()=>{
     try{
-        const categories=databases.listDocuments(appwriteConfig.databaseId,appwriteConfig.categoriesCollectionId)
+        const categories=await databases.listDocuments(appwriteConfig.databaseId,appwriteConfig.categoriesCollectionId)
+
+        return categories.documents;
     }catch(err){
         throw new Error(err as string);
     }
