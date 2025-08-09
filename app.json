@@ -12,6 +12,11 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.pranav.foodordering",
+      "usesCleartextTraffic": true,
+      "networkSecurityConfig": {
+        "cleartextTrafficPermitted": true
+      },
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
